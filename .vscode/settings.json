@@ -1,0 +1,62 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#b4e4ce",
+        "activityBar.activeBorder": "#a372cc",
+        "activityBar.background": "#b4e4ce",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#a372cc",
+        "activityBarBadge.foreground": "#15202b",
+        "statusBar.background": "#8fd6b6",
+        "statusBar.foreground": "#15202b",
+        "statusBarItem.hoverBackground": "#6ac89e",
+        "titleBar.activeBackground": "#8fd6b6",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveBackground": "#8fd6b699",
+        "titleBar.inactiveForeground": "#15202b99"
+    },
+    "peacock.color": "#8fd6b6",
+    "eslint.alwaysShowStatus": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "beautify.config": "",
+    "beautify.ignore": "",
+    "html.format.contentUnformatted": "",
+    "html.format.endWithNewline": true,
+    "html.format.indentHandlebars": true,
+    "html.format.indentInnerHtml": true,
+    "html.format.wrapAttributes": "force",
+    "eslint.probe": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "html",
+        "vue",
+        "markdown",
+    ],
+    "beautify.language": {
+
+        "js": {
+            "type": [
+                "javascript",
+                "json",
+                "jsonc"
+            ],
+            "filename": [
+                ".jshintrc",
+                ".jsbeautifyrc"
+            ]
+        },
+        "css": [
+            "css",
+            "less",
+            "scss"
+        ],
+        "html": [
+            "htm",
+            "html"
+        ],
+
+    }
+}

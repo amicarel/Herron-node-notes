@@ -1,0 +1,45 @@
+{
+  "name": "notes",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start-0": "cross-env DEBUG=notes:* node --experimental-modules ./bin/www.mjs",
+    "start-mem": "cross-env DEBUG=express:* node --experimental-modules ./bin/www.mjs",
+    "start-fs": "cross-env DEBUG=notes:* NOTES_MODEL=fs node --experimental-modules ./bin/www.mjs",
+    "start-lev": "cross-env DEBUG=notes:* NOTES_MODEL=level node --experimental-modules ./bin/www.mjs",
+    "sqlite3": "cross-env DEBUG=notes:* SQLITE_FILE=notes.sqlite3 NOTES_MODEL=sqlite3 node --experimental-modules --inspect ./bin/www.mjs",
+    "Nodemon-sqlite3": "cross-env DEBUG=notes:* SQLITE_FILE=notes.sqlite3 NOTES_MODEL=sqlite3 nodemon --experimental-modules --inspect ./bin/www.mjs",
+    "sequelite": "cross-env DEBUG=notes:* SEQUELIZE_CONNECT=models/sequelize-sqlite.yaml NOTES_MODEL=sequelize USER_SERVICE_URL=http://localhost:3333 node  --experimental-modules ./bin/www.mjs",
+    "seqMy": "cross-env DEBUG=notes:* SEQUELIZE_CONNECT=models/sequelize-server-mysql.yaml NOTES_MODEL=sequelize USER_SERVICE_URL=http://localhost:3333 node  --experimental-modules ./bin/www.mjs",
+    "docker": "node --experimental-modules ./bin/www.mjs",
+    "docker-build": "docker build -t node-web-development/notes ."
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.4.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-session": "^1.17.1",
+    "feather-icons": "^4.28.0",
+    "fs-extra": "^9.0.0",
+    "hbs": "^4.1.1",
+    "http-errors": "~1.6.3",
+    "jquery": "^3.5.1",
+    "level": "^6.0.1",
+    "morgan": "~1.9.1",
+    "mysql2": "^2.2.5",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "popper.js": "^1.16.0",
+    "rotating-file-stream": "^2.1.1",
+    "sequelize": "^5.21.13",
+    "session-file-store": "^1.5.0",
+    "sqlite3": "^4.2.0",
+    "superagent": "^6.1.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "eslint": "^7.18.0"
+  }
+}
